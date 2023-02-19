@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+   
+}
+/*estilos del header*/
+.cabecera{
+    
+    margin-bottom: 10px;
+   
+    position: sticky;
+    top: 0px;
+    z-index:10 ;
+    
+}
+.contenedorLogo{
+    width: 10%;
+    position:relative;
+    left:45%;
+}
+
+.logo{
+    width:40%;
+}
+
+ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+
+.enlaces{
+    color: rgb(27, 27, 27); 
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 300;
+    display: inline-block;
+    background-color:white;
+    border: 5px inset;
+    border-radius: 10px;
+}
+/*estilos del main*/
+.contenidoPrincipal{
+    /*la imagen es provisional*/
+    background-image: url("../assets/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 2vh auto;
+    padding: 2% 2%;
+    text-align: center;
+    border: 1px double black ;
+    
+}
+/*estilamos titulos del main de todo el sitio*/
+.TitulosPrincipales{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    /*background: linear-gradient(rgb(107, 107, 107),rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    color: transparent;*/
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    
+}
+/*estilos para todos los subtitulos del sitio*/
+.SubTitulo1{
+    text-decoration:underline;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    text-decoration:underline double;
+
+}
+.SubTitulo2{
+    text-decoration:underline;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration:underline double;
+
+}
+/*estilos para las tarjetas del index*/
+.cardsPadre{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.card{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: inline-block;
+    vertical-align: top;
+}
+.card1{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: inline-block;
+    vertical-align: top;
+}
+.imgCard{
+    width: 100%;
+}
+
+/*seccion del mapa*/
+
+.mapa{
+    width: 100%;
+    height: 195px;
+  
+}
+
+
+
+.imgpubli{
+    
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .seccionContactos{
+        width: 30%;
+        background-color: aliceblue;
+        text-align: center;
+        padding:0;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+/*seccion Página nosotros*/
+    .textnosotros{
+        width: 40%;
+        background-color: rgb(255, 255, 255);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        display: inline-block;
+        vertical-align: top;
+        left: 50%;
+        
+    }
+/*sección footer*/
+.pieDePagina{
+    background-color: rgba(0, 0, 0, 0.774);
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+       
+        
+    }
+
+.p{
+    color: white;
+    margin: 5px;
+}
+
+.cardsPadref{
+    width: 30%;
+    margin: 0 auto;
+    
+}
+.cardf{
+    width: 30%;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    
+   
+}
+
+.imgCardf{
+    width: 100%;
+}
+ 
+/*estilos con grids*/
+
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "navIzq navDer"
+        "parrafo parrafo"
+        "img img"
+        "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 100px auto 1fr 100px;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+.icono{
+ font-size: 5rem;
+ color: white;   
+}
