@@ -1,0 +1,115 @@
+@import "mixins";
+.marginPropio{
+    margin-bottom: 20px;
+    margin-top:100px !important;
+}
+.TitulosPrincipales{
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    /*background: linear-gradient(rgb(107, 107, 107),rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    color: transparent;*/
+    text-align: $titulos-principales;
+    text-decoration: underline;
+    font-size: 5rem;
+    
+}
+
+.SubTitulo1{
+    text-decoration:underline;
+    padding-top: 20px;
+    
+    color: rgb(247, 246, 246);
+    text-align: center;    
+    font-family: $fuente-secundaria;
+
+}
+.SubTitulo2{
+    @extend .SubTitulo1;
+    color: rgb(255, 255, 255);
+    text-decoration: underline rgb(214, 214, 214);
+    
+    
+
+}
+.parrafo{
+    color: map-get($parrafo,color);
+    font-size:map-get($parrafo,tamaño); 
+    font-family:map-get($parrafo,fuente); 
+    text-align:map-get($parrafo,texto); 
+    background-color:map-get($parrafo,fondo); 
+    font-weight:map-get($parrafo,grosor); 
+    
+}
+
+.contenidoPrincipal {
+    /*la imagen es provisional*/
+    /*background-image: url("../assets/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 2vh auto;
+    padding: 2% 2%;*/
+    text-align: center;
+     }
+  
+    #video-fondo{
+     
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      background-size:cover;
+      background-repeat: no-repeat; 
+      background-position: center;
+      
+    
+    }
+    .card-group{
+        width: 80%;
+        margin: 20px auto;
+        padding-top: 10px;
+        text-align: center;
+        background-color: $color-card;
+    }
+    
+    
+    .card{
+        @include estilado-cards(rgb(255, 255, 255));
+        
+        
+        
+    }
+    
+    .card2{
+        @include estilado-cards(#b8e5fa);
+        
+    }
+    
+    .card-img-top{
+        width:80%;
+        object-fit: cover;
+        
+    }
+    .animar:hover {
+        animation: animacion 1s;
+      }
+      
+      @keyframes animacion {
+        0% {color:rgb(255, 217, 0); }
+        50% {color:rgb(166, 255, 0);}
+        100% { color:rgb(0, 174, 255);}
+      }
+      
+      
+      
+      
+      
+      
+      

@@ -1,0 +1,15 @@
+.imgHover{
+    transition: all 1s;
+    z-index: -1;
+  }
+  .imgHover:hover{
+    
+    transform: scale(1.1);
+    z-index: 50;
+    overflow:hidden;
+    cursor:zoom-out;
+    align-self: center;
+    
+  }
+  
+  

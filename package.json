@@ -1,0 +1,21 @@
+{
+  "name": "evalounge",
+  "version": "1.0.0",
+  "description": "sass para mi proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilosB.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "daniel",
+    "jurado"
+  ],
+  "author": "daniel jurado benavides",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

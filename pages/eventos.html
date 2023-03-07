@@ -4,13 +4,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Eventos</title>
+        <meta name="description" content="Bienvenido a EVA LOUNGE, donde ofrecemos la mejor fiesta y celebraciones.">
+        <meta name="keywords"  content="EVENTOS, EVA, LOUNGE">
+        <title>Eva_Longe_Restobar Eventos</title>
         <link rel="icon" href="../favicon.ico">
         <link rel="stylesheet" href="./css/all.min.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilosB.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         
     </head>
+    <!-- El menú hamburguesa-->
     <body>
         <header>
             <div class="container">
@@ -58,17 +62,21 @@
               </nav>
             </div>
                  
-            
+            <!-- video de fondo del restaurante-->
            
         </header>
         <main class="contenidoPrincipal">
-           <!-- el main va a mejorar--> 
+           <!-- el main va a cambiar segun los eventos del restaurante--> 
            <video id="video-fondo" autoplay muted loop muted>
             <source src="../assets/videos/VID_20230225_200531.mp4" type="video/mp4">
            
           </video>
-           <div>
-                    <h1 class="TitulosPrincipales">Eventos</h1>  
+           <div class="container">
+              <hr>
+              <hr>
+              <hr>
+
+                <h1 class="animar TitulosPrincipales">Eventos</h1>  
            </div>
                 
                 
@@ -87,10 +95,10 @@
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <div class="card">
+                      <div class="card2">
                         <div class="card-body">
                           <h5 class="card-title">Sunset of Eden</h5>
-                          <img src="../assets/img/evento2.PNG" class="card-img-top" alt="San valentin">
+                          <img src="../assets/img/evento2.PNG" class="card-img-top" alt="Sunset of Eden1">
                         </div>
                         
                       </div>
@@ -99,7 +107,7 @@
                       <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Tarjeta 3</h5>
-                          <img src="../assets/img/evento3.PNG" class="card-img-top" alt="San valentin">
+                          <img src="../assets/img/evento3.PNG" class="card-img-top" alt="Sunset of Eden2">
                         </div>
                         
                       </div>
@@ -107,22 +115,32 @@
                   </div>
                 </div>
       <div class="container">
-        <h1 class="SubTitulo1" >Mas Información</h1>
+        <h2 class="SubTitulo2 animar" >Mas Información</h2>
         <form>
           <div class="form-group">
-            <label for="nombre" class="titLabels">Nombre:</label>
-            <input type="text" class="form-control" id="nombre">
+            
+            <input type="text" name="name"  class="field" id="nombre" placeholder="Nombre" required>
+            
           </div>
           <div class="form-group">
-            <label for="email" class="titLabels">Email:</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" name="email" id="email" class="field" placeholder="Email" required>
+            
           </div>
           <div class="form-group">
-            <label for="mensaje" class="titLabels">Mensaje:</label>
-            <textarea class="form-control" id="mensaje"></textarea>
+            <textarea name="message" id="message" class="field" placeholder="Mensaje" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn">Enviar</button>
         </form>
+        
+              
+                  
+            
+                    
+                    
+                    
+                   
+                  
+                </form>
         </main>
       
         <footer class="pieDePagina">

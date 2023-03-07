@@ -1,0 +1,85 @@
+.fondoCabecera{
+    background-color: $color-principal;
+    .centrarNav{
+        text-align: center;
+    }
+    .alto{
+        height: 50vh;
+    }
+}
+
+
+
+
+.flexible{
+    width: 100%;
+    background-color: rgba(255, 192, 203, 0);
+    justify-content: center;
+    .link{
+        box-sizing: border-box;
+        color: #fff!important;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0 10px;
+        transition: border-bottom 0.3s ease;
+    }
+   
+}
+
+.link:hover{
+    box-sizing: border-box;
+    color: #000!important;
+    background-color: #ebdfb9;
+    text-decoration:underline;
+}
+
+
+@media screen and (min-width: 0px) and (max-width:992px) {
+    .card-group {
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+}
+.centrarNav{
+    text-align: center;
+}
+.btn{
+    width: 100%;
+
+
+
+    
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+   
+    .alto{
+        height: initial;
+    }
+    .carousel{
+        width: 100%;
+        margin-top: 10px;
+        height: 40vh;
+        
+    }
+    
+    .flexible{
+       width: initial;
+       justify-content: flex-start;
+    }
+    .centrarNav{
+        text-align: center;
+    }
+
+    .btn{
+        width: 100%;
+        
+    }
+}
+    

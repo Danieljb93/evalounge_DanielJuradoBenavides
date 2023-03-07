@@ -1,0 +1,6 @@
+@mixin estilado-cards($fondo){
+    align-items: center;
+    margin: 10px;
+    
+    background-color: $fondo;
+}
